@@ -1,0 +1,83 @@
+%% Creator: Inkscape 1.0.2 (e86c870879, 2021-01-15, custom), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'bndstr-pdos_NNO_t1.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+    \makeatletter%
+    \providecommand\color[2][]{%
+        \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+        \renewcommand\color[2][]{}%
+    }%
+    \providecommand\transparent[1]{%
+        \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+        \renewcommand\transparent[1]{}%
+    }%
+    \providecommand\rotatebox[2]{#2}%
+    \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+    \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+    \ifx\svgwidth\undefined%
+        \setlength{\unitlength}{153.1276bp}%
+        \ifx\svgscale\undefined%
+          \relax%
+        \else%
+          \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+        \fi%
+    \else%
+      \setlength{\unitlength}{\svgwidth}%
+    \fi%
+    \global\let\svgwidth\undefined%
+    \global\let\svgscale\undefined%
+    \makeatother%
+    \begin{picture}(1,1.1354)%
+        \lineheight{1}%
+        \setlength\tabcolsep{0pt}%
+        \put(0.0000,0.0000){\includegraphics[width=\unitlength,page=1]{../floats/band_structure_evo_tf_nn/bndstr-pdos_NNO_t1.pdf}}%
+        \put(0.0000,0.0000){\includegraphics[width=\unitlength,page=2]{../floats/band_structure_evo_tf_nn/bndstr-pdos_NNO_t1.pdf}}%
+        \put(0.0000,0.0000){\includegraphics[width=\unitlength,page=3]{../floats/band_structure_evo_tf_nn/bndstr-pdos_NNO_t1.pdf}}%
+        \put(0.0000,0.0000){\includegraphics[width=\unitlength,page=4]{../floats/band_structure_evo_tf_nn/bndstr-pdos_NNO_t1.pdf}}%
+        \put(0.0000,0.0000){\includegraphics[width=\unitlength,page=5]{../floats/band_structure_evo_tf_nn/bndstr-pdos_NNO_t1.pdf}}%
+        \put(0.0000,0.0000){\includegraphics[width=\unitlength,page=6]{../floats/band_structure_evo_tf_nn/bndstr-pdos_NNO_t1.pdf}}%
+        \put(0.0742,0.0688){\footnotesize $0$}%
+        \put(0.0742,0.2065){\footnotesize $1$}%
+        \put(0.0729,0.3568){\footnotesize $2$}%
+        \put(0.0742,0.5075){\footnotesize $3$}%
+        \put(0.0718,0.6578){\footnotesize $4$}%
+        \put(0.0729,0.8084){\footnotesize $5$}%
+        \put(0.0729,0.9599){\footnotesize $6$}%
+        \put(0.0718,1.1098){\footnotesize $7$}%
+        \put(0.0272,0.5119){\rotatebox{90}{\footnotesize Energia (\si{\electronvolt})}}%
+        \put(0.8913,1.0359){\footnotesize Spin $\downarrow$}%
+        \put(0.8909,1.0989){\footnotesize Spin $\uparrow$}%
+        \put(0.8891,0.9219){\footnotesize \ce{Nb} $4d$}%
+        \put(0.8885,0.8597){\footnotesize \ce{O} $2p$}%
+        \put(0.8902,0.7364){\footnotesize $\varepsilon_F$}%
+        \put(0.8910,0.7936){\footnotesize Total}%
+        \put(0.1009,0.0081){\footnotesize $\Gamma$}%
+        \put(0.1785,0.0081){\footnotesize Y}%
+        \put(0.2925,0.0081){\footnotesize T}%
+        \put(0.4337,0.0081){\footnotesize $\Gamma$}%
+        \put(0.4893,0.0084){\footnotesize pDOS (\si{\per\electronvolt})}%
+    \end{picture}%
+\endgroup%

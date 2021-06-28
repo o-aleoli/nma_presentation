@@ -1,0 +1,139 @@
+%! TEX root = ../root/root.tex 
+\section{Metodologia e Métodos}
+
+\begin{frame}{Métodos De Primeiros Princípios: DFT}
+	\begin{figure}[t]
+		\centering
+		{\footnotesize\input{../floats/flowdft}}
+		\caption{Esquema autoconsistente da DFT para a obtenção do $\psi_0$.\label{fig:flowdft}}
+	\end{figure}
+	\begin{columns}
+		\begin{column}{.175\textwidth}
+			\includegraphics[height=50px]{../floats/logo_vasp.png}
+		\end{column}
+		\begin{column}{.825\textwidth}\fontsize{7}{7}
+			\begin{itemize}
+				\item \textit{Vienna Ab initio Simulation Package} (VASP)\footnote[frame]{\cite{kresse_efficient_1996,kresse_ultrasoft_1999}} usado com GGA-PBE;
+				\item Contagem de elétrons nas vizinhanças de cada átomo com a abordagem \emph{Atoms In Molecules}\footnote[frame]{\cite{bader_quantum_1981}};
+				\item Parâmetros de rede do cristal volumoso obtidos por minimização da energia total\footnote[frame]{\cite{george_effect_2018,hu_influence_2007}}:
+				\begin{itemize}\footnotesize
+					\item[\ce{NaNbO3}.] $a = 5.62$ ($+1.1\%$), $b = 7.90$ ($+0.9\%$) e $c = \SI{5.55}{\angstrom}$ ($+1.4\%$);
+					\item[\ce{NaTaO3}.] $a = 5.62$ ($+2.0\%$), $b = 7.86$ ($+0.9\%$) e $c = \SI{5.58}{\angstrom}$ ($+1.1\%$).
+				\end{itemize}
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}{Propriedades Cristalinas}
+	\begin{columns}
+		\begin{column}{.4\textwidth}
+			\begin{figure}[t]
+				\centering
+				\input{../floats/bond_angles/bond_angles.pdf_tex}
+				\caption{Ângulos de ligação \ce{Nb-O-Nb} $\alpha$ (direção $[\overline{1}01]$), $\beta$ (direção $[101]$), $\gamma$ (direção $[010]$).\label{fig:angles}}
+			\end{figure}
+		\end{column}
+		\begin{column}{.5\textwidth}{\small
+			\begin{itemize}
+				\item Distância de ligação \ce{Nb-O} média ($\overline{d_{\ce{Nb-O}}}$) e comparação com o do cristal volumoso em estado fundamental;
+				\item Ângulos entre octaedros em referência aos seus eixos, nas direções cristalinas: $[\overline{1}01]$ ($\alpha$), $[101]$ ($\beta$) e $[010]$ ($\gamma$);
+				\item Distorção dos octaedros avaliada com o índice de Baur\footnote[frame]{\cite{baur_geometry_1974}}:
+				\begin{equation}
+					\Delta_d = \frac{1}{6} \sum^{6}_{i=1} \frac{|d_{\ce{Nb-O}\, i} - \overline{d_{\ce{Nb-O}}}|}{\overline{d_{\ce{Nb-O}}}};
+				\end{equation}
+				\item Filme finos: superfícies formam tetraedros \ce{NbO4}. Repulsão dos orbitais $p-d$ depende do ângulo de ligação \ce{O-Nb-O}. O índice de planaridade $P_L$ descreve quâo próximo está do ideal:
+				\begin{equation}
+					P_L = \frac{\theta_{\ce{O-Nb-O}}}{\SI{180}{\degree}};
+				\end{equation}
+			\end{itemize}}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}{Estimativa Da Energia De Formação De Vacância}
+	\begin{itemize}{\small%
+		\item A energia de formação $\Delta E_f$ para vacâncias v$_{\ce{X}}^{q} = \text{v}_{\ce{O}}^{0}, \text{v}_{\ce{O}}^{2+}, \text{v}_{\ce{Na}}^{0}, \text{v}_{\ce{Na}}^{1-}$:
+		\begin{equation}
+			\Delta E_f (\text{v}_{\ce{X}}^{q}; L) =
+			\tikz[baseline] {\node[anchor=base, fill=red!50] (part1) {$\!E_T (\text{v}_{\ce{X}}^{q}; L)\!$};} -
+			\tikz[baseline] {\node[anchor=base, fill=green!40] (part2) {$\!E_T (\text{perfeito}; L)\!$};} -
+			\tikz[baseline] {\node[anchor=base, fill=blue!50] (part3) {$\!n_{\ce{X}} \mu_{\ce{X}}\!$};} +
+			\tikz[baseline] {\node[anchor=base, fill=violet!50] (part4) {$\!q \varepsilon_F\!$};} +
+			\tikz[baseline] {\node[anchor=base, fill=black!40] (part5) {$\!E_c$};}.
+		\end{equation}
+		\begin{itemize}
+			\footnotesize
+			\item\tikz{\node [fill=red!50] (description1) {Energia total da supercélula com v${}_{\ce{X}}^{q}$;};}
+			\item\tikz{\node [fill=green!40] (description2) {Energia total do cristal volumoso sem defeitos;};}
+			\item\tikz{\node [fill=blue!50] (description3) {Troca com reservatório de \ce{X};};}
+			\item\tikz{\node [fill=violet!50] (description4) {Troca com reservatório de e${}^{-}$;};}
+			\item\tikz{\node [fill=black!40] (description5) {Correção de preenchimento de banda.};}
+		\end{itemize}
+		\item Interações vacância-imagens $\to$ imprecisão na energia de formação $\propto L = V^{{}^{1}\!/{}_{3}}$;
+		\item Extrapolação $L\to\infty$ (limite diluído) modelada com\footnote[frame]{\cite{castleton_managing_2006}}:
+		\begin{equation}
+			\Delta E_f (\text{v}_{\ce{X}}^{q}; L) = \Delta E_f (\text{v}_{\ce{X}}^{q}; L\to\infty) + a_1 L^{-1} + a_3 L^{-3}.
+		\end{equation}
+		\begin{itemize}
+			\item Supercélulas repetem a célula convencional nos eixos cartesianos: $1\!\times\!1\!\times\!1$, $2\!\times\!2\!\times\!2$ e $3\!\times\!3\!\times\!3$;
+			\item Parâmetros $\Delta E_f (\text{v}_{\ce{X}}^{q}; L\to\infty)$, $a_1$ e $a_3$ determinados pelo método dos mínimos quadrados.
+		\end{itemize}
+		}
+	\end{itemize}
+\end{frame}
+\begin{frame}{Estimativa Da Energia De Formação De Vacância: Potencial Químico}
+	\begin{columns}
+		\begin{column}{.45\textwidth}
+			\begin{figure}[t]
+				\centering
+				\input{../floats/ternarypd}
+				\caption{Diagrama ternário do \ce{NaNbO3} mostrando as regiões onde se avaliou $\mu_{\ce{X}}$ de v$_{\ce{X}}^q$.\label{fig:ternarypd}}
+			\end{figure}
+		\end{column}
+		\begin{column}{.55\textwidth}
+			\begin{itemize}
+				\item Equilíbrio químico com o \ce{NaNbO3}: $\mu^{0}_{\ce{NaNbO3}} = \mu_{\ce{Na}} + \mu_{\ce{Nb}} + 3 \mu_{\ce{O}}$;
+				\item Condições de síntese mudam $\mu_{\ce{X}}$, variando dentro dos limites impostos pelos reagentes e.g. no equilíbrio I:
+				\begin{equation*}
+					\begin{cases}
+						2 \mu_{\ce{O}} = \mu_{\ce{O2}}^{0};\\
+						2 \mu_{\ce{Nb}} + 5 \mu_{\ce{O}} = \mu_{\ce{Nb2O5}}^{0};\\
+						\mu_{\ce{Na}} + \mu_{\ce{Nb}} + 3 \mu_{\ce{O}} = \mu_{\ce{NaNbO3}}^{0}.
+					\end{cases} \Rightarrow
+				\end{equation*}
+				\begin{equation}
+					\begin{cases}
+						\mu_{\ce{O}} = {}^{1}\!/{}_{2}\, \mu_{\ce{O2}}^{0};\\
+						\mu_{\ce{Nb}} = {}^{1}\!/{}_{2}\, \mu_{\ce{Nb2O5}}^{0} + {}^{5}\!/{}_{4}\, \mu_{\ce{Nb2O5}}^{0};\\
+						\mu_{\ce{Na}} = \mu_{\ce{NaNbO3}}^{0} - {}^{1}\!/{}_{2}\, \mu_{\ce{Nb2O5}}^{0} - {}^{1}\!/{}_{4}\, \mu_{\ce{O2}}^{0}.
+					\end{cases}
+				\end{equation}
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}{Estudo Dos Filmes Finos}
+	\begin{columns}
+		\begin{column}{.5\textwidth}
+			\begin{figure}[t]
+				\centering
+				\input{../floats/slabs/slabs.pdf_tex}
+				\caption{Filme fino de \ce{NaNbO3}. Filme de \ce{NaTaO3} construído de maneira análoga.\label{fig:slabs}}
+			\end{figure}
+		\end{column}
+		\begin{column}{.5\textwidth}
+			\begin{itemize}
+				\item Supercélula: célula convencional $\times 3$ em $[100]$ $+$ vácuo de \SI{15}{\angstrom};
+				\begin{itemize}
+					\item 9 camadas atômicas, 86 átomos.
+				\end{itemize}
+				\item Orientação da clivagem em $[100]$ e terminação \ce{NaNbO} $\to$ tetraedros \ce{NbO4};
+				\item Remoção de duas ligações \ce{Nb-O} $\to$ carga formal $\to$ reconstrução de superfície;
+				\item Estado fundamental descrito com \alert{$b$ e $c$ $1\%$ maiores que do cristal volumoso} $\to$ referência para tensão biaxial.
+				\item Filme de \ce{NaTaO3} construído da mesma forma, estado fundamental com $b$ e $c$ idênticos ao do cristal volumoso. Uso em fotocatálise discutido em outro trabalho\footnote[frame]{\cite{kraus_modulation_2020}}.
+			\end{itemize}
+		\end{column}
+	\end{columns}
+	\begin{center}
+		Figuras da dissertação no \href{https://github.com/o-aleoli/nma_dissertation_fig}{\color{blue}{repositório do GitHub}}.
+	\end{center}
+\end{frame}

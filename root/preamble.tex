@@ -1,0 +1,145 @@
+%! TEX root = ./root.tex
+\let\Big\Huge
+% \usetheme[width=15mm]{Berkeley}
+\usetheme[width=15mm]{Hannover}
+% \usecolortheme{seagull}
+% \usecolortheme{sidebartab}
+\usecolortheme{rose}
+\usecolortheme{dolphin}
+
+\usepackage[utf8]{inputenc}
+\usepackage{%
+	amsmath,
+	amsfonts,
+	amssymb,
+	graphicx,
+	xcolor,
+	bookmark,
+	subcaption,
+	tikz,
+	pgfplots,
+	setspace,
+	braket,
+	booktabs,
+	cleveref,
+	qrcode
+}
+\usepackage[version = 4]{mhchem}
+\usepackage[locale = DE, separate-uncertainty = true]{siunitx}
+\usepackage[
+	autocite=footnote,
+	style=verbose,
+	sorting=none,
+	language=american,
+	url=false,
+	doi=false,
+	isbn=false,
+	eprint=false
+]{biblatex}
+\addbibresource{library.bib}
+\usepgfplotslibrary{ternary}
+\usetikzlibrary{%
+	patterns,
+	arrows.meta,
+	shapes,
+	trees,
+	positioning,
+	decorations.pathmorphing
+}
+\tikzstyle{every picture}+=[remember picture]
+\linespread{1.1}
+
+\definecolor{UFABC}{RGB}{0,90,60}
+
+\setbeamertemplate{caption}[numbered]
+\setbeamerfont{caption}{size=\footnotesize}
+\setbeamerfont{footnote}{size=\tiny}
+\setbeamercolor{structure}{fg=UFABC}
+
+% \makeatletter
+% \setbeamertemplate{sidebar \beamer@sidebarside}
+% {%
+% 	\beamer@tempdim=\beamer@sidebarwidth%
+% 	% \advance\beamer@tempdim by -6pt%
+% 	\vskip4em%
+% 	\insertverticalnavigation{\beamer@sidebarwidth}%
+% 	\vfill%
+% 	\ifx\beamer@sidebarside\beamer@lefttext%
+% 	\else%
+% %		\usebeamercolor{normal text}%
+% %		\usebeamercolor[]{}%
+% 		\llap{\usebeamertemplate***{navigation symbols}\hskip5mm}%
+% 		\vskip2pt%
+% 	\fi%
+% }%
+
+% \setbeamertemplate{section in sidebar}%{sidebar theme}
+% {%
+% 	\vbox{%
+% 		\vskip1ex%
+% 		\beamer@sidebarformat{9pt}{section in sidebar}{\insertsectionhead}%
+% 	}%
+% }
+% \setbeamertemplate{section in sidebar shaded}%{sidebar theme}
+% {%
+% 	\vbox{%
+% 		\vskip1ex%
+% 		\beamer@sidebarformat{9pt}{section in sidebar shaded}{\insertsectionhead}%
+% 	}%
+% }
+% \makeatother
+
+\AtBeginSection[]{%
+	\begin{frame}
+		\vfill
+		\centering
+		\usebeamerfont{title}\usebeamercolor[fg]{title}\insertsectionhead\par%
+		\vfill
+	\end{frame}
+}
+
+\AtBeginSubsection[]{%
+	\begin{frame}
+		\vfill
+		\centering
+		\usebeamerfont{title}\usebeamercolor[fg]{title}\insertsubsectionhead\par%
+		\vfill
+	\end{frame}
+}
+
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
+
+\setbeamertemplate{frametitle}{%
+	\vspace{4mm}%
+	\usebeamerfont{title}%
+	\insertframetitle%
+	\hfill%
+	\footnotesize%
+	\insertframenumber/\inserttotalframenumber%
+	\par%
+	\nointerlineskip%
+	\vspace{1mm}
+	\hrulefill%
+}
+
+\newcommand\crule[3][black]{\textcolor{#1}{\rule{#2}{#3}}}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\tablename}{Tab.}
+
+% Use shortjournal instead of journal from library.bib
+\renewbibmacro*{journal}{%
+  \iffieldundef{shortjournal}
+    {%
+      \iffieldundef{journaltitle}
+        {}
+        {%
+          \printtext[journaltitle]
+            {%
+              \printfield[titlecase]{journaltitle}%
+              \setunit{\subtitlepunct}%
+              \printfield[titlecase]{journalsubtitle}%
+             }%
+         }%
+    }
+    {\printtext[journaltitle]{\printfield[titlecase]{shortjournal}}}%
+}

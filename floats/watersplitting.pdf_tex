@@ -1,0 +1,70 @@
+%% Creator: Inkscape inkscape 0.92.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'watersplitting.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{248.34477943bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.68484927)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put ( 0.00000000, 0.00000000) {\includegraphics[width=\unitlength,page=1]{../floats/watersplitting.pdf}}%
+    \put ( 0.32000000, 0.63782140) {banda de condução}%
+    \put ( 0.35000000,-0.01000000) {banda de valência}%
+    \put ( 0.00000000, 0.00000000) {\includegraphics[width=\unitlength,page=2]{../floats/watersplitting.pdf}}%
+    \put ( 0.94000000, 0.27000000) {\rotatebox{90}{\SI{1.23}{\electronvolt}}}%
+    \put ( 0.77552842, 0.52043166) {\ce{H+ / H2}}%
+    \put ( 0.79968840, 0.14293344) {\ce{H2O / O2}}%
+    \put ( 0.00000000, 0.00000000) {\includegraphics[width=\unitlength,page=3]{../floats/watersplitting.pdf}}%
+    \put ( 0.44942220, 0.54966144) {\ce{e-}}%
+    \put ( 0.44292214, 0.06500000) {\ce{h+}}%
+    \put ( 0.08417572, 0.52000000) {$\gamma$}%
+    \put ( 0.00000000, 0.00000000) {\includegraphics[width=\unitlength,page=4]{../floats/watersplitting.pdf}}%
+    \put ( 0.00500000, 0.25000000) {\rotatebox{90}{Energia}}%
+  \end{picture}%
+\endgroup%

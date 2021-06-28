@@ -1,0 +1,47 @@
+\documentclass[9pt, aspectratio=169]{beamer}
+
+\input{preamble}
+
+\author[]{Alexandre O. Kraus, Jeverson T. Arantes}
+\title[]{\bfseries \texorpdfstring{\ce{NaNbO3}}{NaNbO3} Vacancies Defects And Thin-film Biaxial Strain Effect}
+\subtitle{A First-Principles Approach}
+\date{Junho de 2021}
+\institute{Defesa de Dissertação para o Programa de Pós-Graduação em Nanociências e Materiais Avançados}
+\titlegraphic{\includegraphics[height=40px]{../floats/agradecimentos/logo_nano_footer2.png}\hfill\includegraphics[height=40px]{../floats/agradecimentos/logo-original-preta.pdf}}
+
+\begin{document}
+
+\tikzstyle{every picture}+=[remember picture]
+
+% By default all math in TikZ nodes are set in inline mode. Change this to
+% displaystyle so that we don't get small fractions.
+\everymath{\displaystyle}
+
+\tikzstyle{arrow} = [draw, -{Latex[width=0.5em]}]
+\newcommand{\tikzmark}[1]{\tikz[baseline,remember picture] \coordinate (#1) {};}% TikZ aponta setas para onde o \titkzset está
+
+\tikzset{%
+    square arrow/.style={%
+       to path={-- ++(-10,-.25) -| (\tikztotarget)}
+  }
+}
+
+\frame{\titlepage}
+
+\input{../chapters/intro}
+\input{../chapters/metho}
+\input{../chapters/resul}
+\input{../chapters/concl}
+
+\begin{frame}
+    \vfill
+    \centering
+    \huge
+    \alert{Obrigado!\\Perguntas?}\\\vspace{50px}
+    \includegraphics[height=40px]{../floats/agradecimentos/logo-original-preta.pdf}\quad\includegraphics[height=40px]{../floats/agradecimentos/logo_nano_footer2.png}\quad\includegraphics[height=40px]{../floats/agradecimentos/computacao.png}\\
+    \includegraphics[height=40px]{../floats/agradecimentos/topo_cenapad_unicamp.jpg}
+\end{frame}
+
+\input{../chapters/annex}
+
+\end{document}

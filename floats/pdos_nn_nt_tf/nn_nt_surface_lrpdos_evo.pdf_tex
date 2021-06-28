@@ -1,0 +1,89 @@
+%% Creator: Inkscape 1.0.2 (e86c870879, 2021-01-15), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'nn_nt_surface_lrpdos_evo.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{382.65bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.4816)%
+    \put (0.0000, 0.0000) {\includegraphics[width=\unitlength,page=1]{../floats/pdos_nn_nt_tf/nn_nt_surface_lrpdos_evo.pdf}}%
+    \put (0.0600, 0.2086) {\rotatebox{90}{pDOS (\si{\per\electronvolt})}}%
+    \put (0.1380, 0.4277) {a}%
+    \put (0.6006, 0.4277) {b}%
+    \put (0.1380, 0.3047) {c}%
+    \put (0.6006, 0.3047) {d}%
+    \put (0.1380, 0.1818) {e}%
+    \put (0.6006, 0.1818) {f}%
+    \put (0.0942, 0.0729) {$1$}%
+    \put (0.1649, 0.0729) {$2$}%
+    \put (0.2355, 0.0729) {$3$}%
+    \put (0.3061, 0.0729) {$4$}%
+    \put (0.3770, 0.0729) {$5$}%
+    \put (0.4476, 0.0729) {$6$}%
+    \put (0.5182, 0.0729) {$7$}%
+    \put (0.2502, 0.0412) {Energia (\si{\electronvolt})}%
+    \put (0.5568, 0.0729) {$1$}%
+    \put (0.6274, 0.0729) {$2$}%
+    \put (0.6980, 0.0729) {$3$}%
+    \put (0.7688, 0.0729) {$4$}%
+    \put (0.8394, 0.0729) {$5$}%
+    \put (0.9100, 0.0729) {$6$}%
+    \put (0.9808, 0.0729) {$7$}%
+    \put (0.7127, 0.0412) {Energia (\si{\electronvolt})}%
+    \put (0.0000, 0.1702) {\rotatebox{90}{Tensão biaxial (\%)}}%
+    \put (0.1687, 0.0203) {\scalebox{0.75}{\ce{M} $d_{x^2-y^2}$}}%
+    \put (0.3086, 0.0203) {\scalebox{0.75}{\ce{M} $d_{3z^2-r^2}$}}%
+    \put (0.4536, 0.0203) {\scalebox{0.75}{\ce{M} $d_{xy}$}}%
+    \put (0.6351, 0.0203) {\scalebox{0.75}{\ce{M} $d_{zy}$}}%
+    \put (0.7415, 0.0203) {\scalebox{0.75}{\ce{M} $d_{xz}$}}%
+    \put (0.8489, 0.0203) {\scalebox{0.75}{Total}}%
+    \put (0.9283, 0.0203) {\scalebox{0.75}{$\varepsilon_F$}}%
+    \put (0.2641, 0.4596) {\ce{NaNbO3}}%
+    \put (0.7295, 0.4596) {\ce{NaTaO3}}%
+  \end{picture}%
+\endgroup%
